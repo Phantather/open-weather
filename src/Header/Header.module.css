@@ -1,0 +1,69 @@
+.header{
+    padding: 20px 0 30px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.part{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    column-gap: 10px;
+}
+
+.input{
+    width: 194px;
+    height: 37px;
+    border-radius: 10px;
+    background: var(--gray-block);
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    color: white;
+    font-weight: 500;
+}
+
+.input.light{
+    background: var(--blue-block);
+    color: black;
+}
+
+.button{
+    font-weight: 500;
+    height: 37px;
+    padding: 0 20px;
+    background: var(--gray-block);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.button.light{
+    background: var(--blue-block);
+    color: black;
+}
+
+.theme{
+    cursor: pointer;
+}
+.theme.light svg path{
+    fill: #000;
+}
+

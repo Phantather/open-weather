@@ -1,0 +1,111 @@
+.left{
+    width: calc(30% - 25px);
+    background: var(--gray-block);
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+
+.left.light{
+    background: white;
+}
+
+.leftTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.leftTopLeft{
+
+}
+
+.deg{
+    font-weight: 500;
+    font-size: 96px;
+    color: var(--blue);
+}
+
+.today{
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.infotext{
+    color: var(--gray-text);
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+
+.infotext:last-of-type{
+    margin-bottom: 0;
+}
+
+.mainHeader{
+    display: flex;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.right{
+    width: calc(70% - 25px);
+    background: var(--gray-block);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 42px 0 42px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.right.light{
+    background: white;
+}
+
+.right::before{
+    content: url("../../assets/Icons/Cloud.png");
+    position: absolute;
+    width: 60%;
+    height: 66%;
+    right: -30px;
+    top: 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.circle{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+}
+
+.category{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--gray-text);
+    width: 91px;
+}
+
+.categoryValue{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
