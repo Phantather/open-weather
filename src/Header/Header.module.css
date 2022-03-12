@@ -1,14 +1,14 @@
-.header{
+.header {
     padding: 20px 0 30px;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.title{
+.title {
     color: var(--blue);
     font-weight: bold;
     font-size: 25px;
@@ -16,18 +16,18 @@
     text-transform: uppercase;
 }
 
-.part{
+.part {
     display: flex;
     column-gap: 25px;
     align-items: center;
 }
 
-.form{
+.form {
     display: flex;
     column-gap: 10px;
 }
 
-.input{
+.input {
     width: 194px;
     height: 37px;
     border-radius: 10px;
@@ -39,12 +39,12 @@
     font-weight: 500;
 }
 
-.input.light{
+.input.light {
     background: var(--blue-block);
     color: black;
 }
 
-.button{
+.button {
     font-weight: 500;
     height: 37px;
     padding: 0 20px;
@@ -55,15 +55,58 @@
     color: white;
 }
 
-.button.light{
+.button.light {
     background: var(--blue-block);
     color: black;
 }
 
-.theme{
+.theme {
     cursor: pointer;
 }
-.theme.light svg path{
+
+.theme.light svg path {
     fill: #000;
+}
+
+
+@media (max-width: 768px) {
+    .input {
+        width: 170px
+    }
+}
+
+
+@media (max-width: 567px) {
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .part {
+        margin-bottom: 25px;
+    }
+
+    .part:last-child {
+        margin-bottom: 0;
+    }
+
+    .input {
+        width: 190px
+    }
+}
+
+
+
+
+@media (max-width: 321px) {
+    .part {
+        margin-bottom: 25px;
+    }
+    .part:last-child {
+        margin-bottom: 0;
+    }
+    .input {
+        width: 136px
+    }
 }
 

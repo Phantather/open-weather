@@ -1,4 +1,4 @@
-.left{
+.left {
     width: calc(30% - 25px);
     background: var(--gray-block);
     padding: 20px;
@@ -7,50 +7,50 @@
     border-radius: 20px;
 }
 
-.left.light{
+.left.light {
     background: white;
 }
 
-.leftTop{
+.leftTop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
 }
 
-.leftTopLeft{
+.leftTopLeft {
 
 }
 
-.deg{
+.deg {
     font-weight: 500;
     font-size: 96px;
     color: var(--blue);
 }
 
-.today{
+.today {
     font-weight: normal;
     font-size: 40px;
 }
 
-.infotext{
+.infotext {
     color: var(--gray-text);
     font-weight: normal;
     font-size: 25px;
     margin-bottom: 14px;
 }
 
-.infotext:last-of-type{
+.infotext:last-of-type {
     margin-bottom: 0;
 }
 
-.mainHeader{
+.mainHeader {
     display: flex;
     column-gap: 50px;
     flex-wrap: wrap;
 }
 
-.right{
+.right {
     width: calc(70% - 25px);
     background: var(--gray-block);
     border-radius: 20px;
@@ -60,11 +60,11 @@
     overflow: hidden;
 }
 
-.right.light{
+.right.light {
     background: white;
 }
 
-.right::before{
+.right::before {
     content: url("../../assets/Icons/Cloud.png");
     position: absolute;
     width: 60%;
@@ -73,19 +73,19 @@
     top: 0;
 }
 
-.list{
+.list {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.item{
+.item {
     display: flex;
     align-items: center;
     column-gap: 20px;
 }
 
-.circle{
+.circle {
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -96,7 +96,7 @@
     box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
 }
 
-.category{
+.category {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
@@ -104,8 +104,78 @@
     width: 91px;
 }
 
-.categoryValue{
+.categoryValue {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
+}
+
+
+@media (max-width: 991px) {
+    .leftTop img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainHeader {
+        column-gap: 20px;
+    }
+
+    .left {
+        width: calc(50% - 10px);
+    }
+
+    .right {
+        width: calc(50% - 10px);
+    }
+
+    .right::before {
+        display: none;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .mainHeader {
+        display: block;
+    }
+        .left{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .leftTop img{
+            width: 35%;
+        }
+        .right {
+            width: 100%;
+            padding: 42px 32px;
+        }
+
+
+}
+
+
+
+
+@media (max-width: 321px) {
+    .leftTop img{
+        width: 60%;
+    }
+    .right {
+        width: 100%;
+        padding: 42px 32px;
+    }
+
+    .right::before{
+        display: none;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .category {
+        margin: 10px 0;
+    }
 }

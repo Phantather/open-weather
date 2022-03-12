@@ -91,3 +91,78 @@
     color: var(--gray-text);
 }
 
+
+
+
+
+@media (max-width: 768px) {
+    .listDate {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    .itemDate {
+       width: calc(33.33333% - 10px);
+        text-align: center;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: calc(25% - 15px);
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 567px) {
+    .card {
+        width: calc(25% - 15px);
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+        .listDate {
+            row-gap: 15px;
+        }
+        .itemDate {
+            width: calc(50% - 7.5px);
+            font-size: 16px;
+        }
+        .row {
+            flex-wrap: wrap;
+        }
+        .card {
+            width: calc(50% - 10px);
+            padding: 10px;
+        }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+    .listDate {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    .itemDate {
+        width: calc(50% - 7.5px);
+        font-size: 13px;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: calc(50% - 10px);
+        padding: 10px;
+    }
+}
+
