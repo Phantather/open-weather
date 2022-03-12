@@ -152,13 +152,20 @@
             padding: 42px 32px;
         }
 
+}
 
+@media (max-width: 480px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .category {
+        margin: 10px 0;
+    }
 }
 
 
-
-
-@media (max-width: 321px) {
+@media (max-width: 320px) {
     .leftTop img{
         width: 60%;
     }
